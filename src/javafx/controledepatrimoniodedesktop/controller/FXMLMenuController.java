@@ -28,6 +28,9 @@ public class FXMLMenuController implements Initializable {
 
     @FXML
     private AnchorPane anchorPane;
+        
+    @FXML
+    private MenuItem menuThreadSockets;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -64,6 +67,12 @@ public class FXMLMenuController implements Initializable {
     public void showFXMLMenuGraficoAlocacao() throws IOException {
         System.out.println("\nCarregando Tela FXMLMenuGraficoAlocacao\n");
         AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/javafx/controledepatrimoniodedesktop/view/FXMLGraficoAlocacao.fxml"));
+        anchorPane.getChildren().setAll(a);
+    }
+    @FXML
+    public void showFXMLThreadSockets() throws IOException {
+        System.out.println("\nCarregando Tela FXMLThreadSockets\n");
+        AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/javafx/controledepatrimoniodedesktop/view/FXMLThreadSockets.fxml"));
         anchorPane.getChildren().setAll(a);
     }
 

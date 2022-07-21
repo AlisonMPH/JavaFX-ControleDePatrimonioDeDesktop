@@ -23,6 +23,11 @@
                   <MenuItem fx:id="menuMostrarRelatorioQuantidade" mnemonicParsing="false" onAction="#showFXMLMenuRelatorioQuantidade" text="Relatório Quantidade" />
             </items>
           </Menu>
+            <Menu fx:id="MenuThreadSockets" mnemonicParsing="false" text="Thread e Sockets">
+               <items>
+                  <MenuItem fx:id="menuThreadSockets" mnemonicParsing="false" onAction="#showFXMLThreadSockets" text="Mostrar Conexões" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
       <AnchorPane fx:id="anchorPane" prefHeight="440.0" prefWidth="600.0" />

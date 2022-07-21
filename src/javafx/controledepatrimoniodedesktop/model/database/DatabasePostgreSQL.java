@@ -14,7 +14,7 @@ public class DatabasePostgreSQL implements Database {
     public Connection conectar() {
         try {
             Class.forName("org.postgresql.Driver");
-            this.connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1/db_ControleDePatrimonioDeDesktop", "postgres","admin");
+            this.connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1/db_ControleDePatrimonioDeDesktop", "postgres","postgres");
             return this.connection;
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(DatabasePostgreSQL.class.getName()).log(Level.SEVERE, null, ex);
